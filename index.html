@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Projeto Dio - Formulário </title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Dio - Formulário</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <h1>Projeto Dio / Formulário</h1>
 
-    <h1>Projeto Dio / Formulário </h1>
+  <form>
+    <label for="nome">Digite seu nome completo:
+      <input id="nome" type="text" required>
+    </label>
 
-    <form>
+    <label for="email">Digite seu e-mail:
+      <input id="email" type="email" required>
+    </label>
 
-        <label for="nome"> Digite seu nome completo:
-            <input id="nome" type="text" required>
-        </label>
+    <label for="idade">Sua idade:
+      <input id="idade" type="number" min="0" required>
+    </label>
 
-        <label for="email"> Digite seu e-mail:
-            <input id="email" type="email" required>
-        </label>
+    <label for="curso">Qual curso está cursando?
+      <input id="curso" type="text" required>
+    </label>
 
-        <label for="idade"> Sua idade:
-            <input id="idade" type="number" min="0" required>
-        </label>
+    <button id="enviar" type="submit">Enviar!</button>
+    <button id="btnReset" type="button">Limpar</button>
+  </form>
 
-        <label for="curso"> Qual curso esta cursando?
-            <input id="curso" type="text"required>
-        </label>
+  <output id="output"></output>
 
-        <button id="enviar" type="submit"> Enviar! </button>
-        <button id="reset" type="reset"> Limpar </button>
-
-    </form>
-
-    <output id="output"></output>
-
-<script src="develop.js"></script>
+  <script src="develop.js"></script>
 </body>
-
 </html>
